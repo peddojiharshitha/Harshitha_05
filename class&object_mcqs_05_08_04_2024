@@ -1,0 +1,39 @@
+1.Which of the following is a correct definition of a class?
+a) An instance of an object
+b) A blueprint or prototype for creating objects
+c) A method in Java
+d) A package in Java
+Answer:
+b) A blueprint or prototype for creating objects
+
+2.What is an object in Java?
+a) A reference to a class
+b) A runtime entity
+c) A method
+d) An attribute
+Answer:
+b) A runtime entity
+
+3. Which keyword is used to create a new instance of a class?
+a) new
+b) this
+c) instance
+d) object
+Answer:
+a) new
+
+4.What are the main components of a class?
+a) Attributes and Packages
+b) Objects and References
+c) Methods and Attributes
+d) Constructors and Destructors
+Answer:
+c) Methods and Attributes
+
+5.Which keyword is used to refer to the current instance of an object within a class?
+a) object
+b) this
+c) self
+d) class
+Answer:
+b) this
