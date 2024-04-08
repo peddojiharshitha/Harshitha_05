@@ -1,0 +1,91 @@
+1.Which of these is an incorrect array declaration?
+a) int arr[] = new int[5]
+b) int [] arr = new int[5]
+c) int arr[] = new int[5]
+d) int arr[] = int [5] new
+Answer:d
+Explanation: Operator new must be succeeded by array type and array size.
+
+2.What will be the output of the following Java code?
+ int arr[] = new int [5];
+ System.out.print(arr);
+a) 0
+b) value stored in arr[0]
+c) 00000
+d) Class name@ hashcode in hexadecimal form
+Answer:d
+Explanation: If we trying to print any reference variable internally, toString() will be called which is implemented to return the String in following form:
+classname@hashcode in hexadecimal form.
+
+3.What will be the output of the following Java code?
+  class array_output 
+    {
+        public static void main(String args[]) 
+        {
+            int array_variable [] = new int[10];
+	    for (int i = 0; i < 10; ++i) 
+            {
+                array_variable[i] = i;
+                System.out.print(array_variable[i] + " ");
+                i++;
+            }
+        } 
+    }
+a) 0 2 4 6 8
+b) 1 3 5 7 9
+c) 0 1 2 3 4 5 6 7 8 9
+d) 1 2 3 4 5 6 7 8 9 10
+Answer: a
+Explanation: When an array is declared using new operator then all of its elements are initialized to 0 automatically. for loop body is executed 5 times as whenever controls comes in the loop i value is incremented twice, first by i++ in body of loop then by ++i in increment condition of for loop.
+output:
+$ javac array_output.java
+$ java array_output
+0 2 4 6 8
+
+4.What will be the output of the following Java code?
+
+    class evaluate 
+    {
+        public static void main(String args[]) 
+            {
+	        int arr[] = new int[] {0 , 1, 2, 3, 4, 5, 6, 7, 8, 9};
+	        int n = 6;
+                n = arr[arr[n] / 2];
+	        System.out.println(arr[n] / 2);
+            } 
+    }
+a) 3
+b) 0
+c) 6
+d) 1
+Answer: d
+Explanation: Array arr contains 10 elements. n contains 6 thus in next line n is given value 3 printing arr[3]/2 i:e 3/2 = 1 because of int Value, by int values there is no rest. If this values would be float the result would be 1.5.
+output:
+$ javac evaluate.java
+$ java evaluate
+1
+
+5. What will be the output of the following Java code?
+
+    class array_output 
+    {
+        public static void main(String args[]) 
+        {
+            char array_variable [] = new char[10];
+	    for (int i = 0; i < 10; ++i) 
+            {
+                array_variable[i] = 'i';
+                System.out.print(array_variable[i] + "");
+            }
+        } 
+    }
+a) 1 2 3 4 5 6 7 8 9 10
+b) 0 1 2 3 4 5 6 7 8 9 10
+c) i j k l m n o p q r
+d) i i i i i i i i i i
+Answer: d
+Explanation: None.
+output:
+$ javac array_output.java
+$ java array_output
+i i i i i i i i i i
